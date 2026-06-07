@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rishi Bagodi - Frontend Developer & Machine Learning Enthusiast Portfolio">
+    <title>Rishi Bagodi | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-grid"></div>
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">RB.</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero section">
+        <div class="hero-content">
+
+            <h1 class="hero-name">Hi, I'm <span class="accent">Rishi Bagodi</span></h1>
+            <h2 class="hero-subtitle">
+                <span class="typewriter-text"></span><span class="cursor">&nbsp;</span>
+            </h2>
+            <p class="hero-desc">B.Tech Information Science Engineering</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="D:\Rishi_Bagodi 24BTRIS037.pdf" class="btn secondary-btn">Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">01. <span class="accent">About Me</span></h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>Hello! I'm Rishi, a passionate Frontend Developer and Machine Learning Enthusiast currently pursuing
+                    my B.Tech in Information Science Engineering at Jain (Deemed-to-be) University (CGPA: 7.9).</p>
+                <p>My career objective is to leverage my skills in web development and artificial intelligence to build
+                    innovative, efficient, and accessible solutions. I enjoy bridging the gap between complex algorithms
+                    and beautiful user interfaces.</p>
+                <p>When I'm not coding, I'm likely exploring new ML models, participating in hackathons, or learning
+                    about the latest tech trends.</p>
+            </div>
+            <div class="about-code">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="file-name">profile.json</span>
+                    </div>
+                    <pre><code><span class="json-key">"name"</span>: <span class="json-string">"Rishi Bagodi"</span>,
+<span class="json-key">"role"</span>: <span class="json-string">"Frontend Developer & ML Enthusiast"</span>,
+<span class="json-key">"education"</span>: <span class="json-string">"B.Tech ISE, Jain University"</span>,
+<span class="json-key">"skills"</span>: [<span class="json-string">"React"</span>, <span class="json-string">"Python"</span>, <span class="json-string">"TensorFlow.js"</span>],
+<span class="json-key">"status"</span>: <span class="json-string">"open to internships"</span></code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">02. <span class="accent">Skills</span></h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks & Libraries</h3>
+                <div class="skill-tags">
+                    <span class="tag">React</span>
+                    <span class="tag">Next.js</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">TensorFlow.js</span>
+                    <span class="tag">scikit-learn</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Databases</h3>
+                <div class="skill-tags">
+                    <span class="tag">Git</span>
+                    <span class="tag">GitHub</span>
+                    <span class="tag">VS Code</span>
+                    <span class="tag">MySQL</span>
+                </div>
+            </div>
+            <div class="skill-category soft-skills">
+                <h3>Soft Skills</h3>
+                <div class="chip-container">
+                    <span class="chip">Problem Solving</span>
+                    <span class="chip">Teamwork</span>
+                    <span class="chip">Adaptability</span>
+                    <span class="chip">Communication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">03. <span class="accent">Projects</span></h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">Agri-Netra</h3>
+                    <div class="project-desc">
+                        <p>Smart Crop Disease Detection & Irrigation Advisory.</p>
+                        <ul>
+                            <li>Disease detection using ML models</li>
+                            <li>Real-time weather integration</li>
+                            <li>Irrigation advisory system</li>
+                        </ul>
+                    </div>
+                    <ul class="project-tech">
+                        <li>React 19</li>
+                        <li>Vite</li>
+                        <li>TailwindCSS</li>
+                        <li>TensorFlow.js</li>
+                        <li>OpenWeatherMap</li>
+                        <li>Recharts</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">EcoFinds</h3>
+                    <div class="project-desc">
+                        <p>Sustainable Product Discovery Platform.</p>
+                        <ul>
+                            <li>Eco-friendly product recommendations</li>
+                            <li>Responsive UI with modern stack</li>
+                            <li>Fast server-side rendering</li>
+                        </ul>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Next.js 15</li>
+                        <li>React 18</li>
+                        <li>TypeScript</li>
+                        <li>TailwindCSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">House Price Predictor</h3>
+                    <div class="project-desc">
+                        <p>Machine Learning pipeline for predicting house prices.</p>
+                        <ul>
+                            <li>Data exploration & preprocessing</li>
+                            <li>Model training (RF, XGBoost)</li>
+                            <li>Flask-based API integration</li>
+                        </ul>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Python</li>
+                        <li>scikit-learn</li>
+                        <li>Flask</li>
+                        <li>HTML/CSS/JS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">Personal Portfolio Website</h3>
+                    <div class="project-desc">
+                        <p>The dark, tech-themed portfolio website you are looking at.</p>
+                        <ul>
+                            <li>Fully responsive design</li>
+                            <li>Custom CSS animations</li>
+                            <li>Canvas particle effects</li>
+                        </ul>
+                    </div>
+                    <ul class="project-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathons & Certifications -->
+    <section id="hackathons" class="section">
+        <h2 class="section-title">04. <span class="accent">Experience</span></h2>
+        <div class="experience-container">
+            <div class="experience-col">
+                <h3 class="sub-heading"><span class="icon">🏆</span> Hackathons</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Vishwakarma'26</h4>
+                            <p class="timeline-date">CIT | Apr 2026</p>
+                            <p>Participated in building innovative tech solutions under tight deadlines.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>INCEPTRIX 2026</h4>
+                            <p class="timeline-date">Jain University | Jan 2026</p>
+                            <p>Collaborated with a team for problem-solving in a competitive environment.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-col">
+                <h3 class="sub-heading"><span class="icon">📜</span> Certifications</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h4>Data Science</h4>
+                            <p class="timeline-date">IIT Bombay | 2025</p>
+                            <p>Comprehensive course covering data analysis, visualization, and machine learning
+                                fundamentals.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">05. <span class="accent">Contact</span></h2>
+        <div class="contact-container">
+            <h3 class="contact-heading">Let's Connect</h3>
+            <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just
+                want to say hi, I'll try my best to get back to you!</p>
+
+            <div class="contact-card">
+                <a href="mailto:rishibagodi@gmail.com" class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <span class="contact-label">rishibagodi@gmail.com</span>
+                </a>
+                <a href="tel:+919148172926" class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span class="contact-label">+91 9148172926</span>
+                </a>
+                <a href="https://github.com/rishibagodi" target="_blank" class="contact-item">
+                    <span class="contact-icon">💻</span>
+                    <span class="contact-label">github.com/rishibagodi</span>
+                </a>
+                <a href="https://www.linkedin.com/in/rishi-bagodi-2646871ba/" target="_blank" class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <span class="contact-label">linkedin.com/in/rishi-bagodi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="https://github.com/rishibagodi" target="_blank">GitHub</a>
+            <span class="separator">|</span>
+            <a href="https://linkedin.com/in/rishi-bagodi" target="_blank">LinkedIn</a>
+        </div>
+        <p>Built by Rishi Bagodi &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
